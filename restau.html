@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./restau-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Restaurant</title>
+</head>
+
+<body>
+  <header>
+    <div id="navbar">
+      <a href="#home" id="logo">
+        <img src="./img/restau-logo.png"></img>
+        <p>Family Table</p>
+      </a>
+      <nav class="nav">
+        <div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="icon-cart">
+          <img src="./img/icons8-cart-64.png" alt="cart_img">
+          <span class="quantity">0</span>
+        </div>
+      </nav>
+    </div>
+    <div id="hero">
+      <div id="hero-txt">
+        <h1>Welcome To Our Restaurant <span>Family Table</span></h1>
+        <p>Family Table Will Make You All Enjoying The Best Quality of Food</p>
+        <a href="#about" class="discover">Discover</a>
+      </div>
+      <img src="./img/hero-golden-blacked-dish.png" alt="hero image" id="hero-img">
+    </div>
+
+  </header>
+  <!------------------ Cart ----------------->
+  <div class="cart-container">
+    <div class="cart">
+      <div class="cart-title" style="text-align: center;">Your Cart
+      </div>
+
+      <div class="listCart">
+        <!-- les items ajoutee -->
+      </div>
+      <div class="cart-total">
+        <div>Total: $0.00</div>
+      </div>
+      <div class="btn-cart">
+        <button class="close">Close</button>
+        <button class="checkOut">Check Out</button>
+      </div>
+    </div>
+  </div>
+  <!--------------- End of Cart --------------->
+  <main>
+    <section id="about">
+      <div class="container">
+        <div class="title">
+          <h2>About Family Table</h2>
+          <p>Here You will Find All About Our Story</p>
+        </div>
+        <div id="details">
+          <div id="details-txt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque praesentium sed nobis rerum
+              natus, ea possimus blanditiis cupiditate ipsam illo ut voluptatum laborum sapiente, et incidunt, maiores
+              illum pariatur inventore. Quod corporis autem, nihil, labore corrupti omnis fugit, veritatis ratione atque
+              repudiandae facilis cum et mollitia ea architecto accusantium.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem necessitatibus quisquam soluta repudiandae
+              corporis praesentium omnis molestias! Nam illum architecto voluptas et officia ipsa veritatis, impedit ut
+              iste voluptatum amet, nisi quae itaque, modi explicabo praesentium sint earum recusandae blanditiis
+              repudiandae non dicta. Illum iste quibusdam tempore vero mollitia cupiditate?</p>
+            <a href="#gallery" class="discover">Go to Gallery</a>
+          </div>
+          <div id="details-img">
+            <img src="./img/restau-decoration1.jpg" alt="Restaurant">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="container">
+
+        <div class="title">
+          <h2>Our Special Menu</h2>
+          <ul style="display: flex;justify-content:space-around;">
+            <p>Principals</p>
+            <p>Juices</p>
+            <p>Cakes</p>
+            <p>Ice Cream</p>
+          </ul>
+        </div>
+
+        <div class="menu-principal">
+
+          <div id="food">
+
+            <div class="item">
+              <div class="item-info">
+                <img src="./img/offer3.png" alt="Dish 1">
+                <h3>Cheesy Spagetti</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $10.00</p>
+                <a href="" class="btn" data-id="1" data-name="Cheesy Spagetti" data-price="$10.00"
+                  data-image="./offer3.png">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-info">
+                <img src="./img/Suchi-dish1.png" alt="Dish 2">
+                <h3>Japanese Suchi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $20.00</p>
+                <a href="" class="btn" data-id="2" data-name="Japanese Suchi" data-price="$20.00"
+                  data-image="./Suchi-dish1.png">Add to Cart</a>
+
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-info">
+                <img src="./img/food-menu-3.png" alt="Dish 3">
+                <h3>Chicken Wings</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $15.00</p>
+                <a href="" class="btn" data-id="3" data-name="Chicken Wings" data-price="$15.00$"
+                  data-image="./food-menu-3.png">Add to Cart</a>
+
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-info">
+                <img src="./img/pasta.png" alt="Dish 4">
+                <h3>Pasta</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $10.00</p>
+                <a href="" class="btn" data-id="4" data-name="Pasta" data-price="$10.00$"
+                  data-image="./pasta.png">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-info">
+                <img src="./img/food-menu-5.png" alt="Dish 5">
+                <h3>Beef</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $25.00</p>
+                <a href="" class="btn" data-id="5" data-name="Beef" data-price="$25.00$"
+                  data-image="./food-menu-5.png">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-info">
+                <img src="./img/food-menu-6.png" alt="Dish 6">
+                <h3>Eggs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $5.00</p>
+                <a href="" class="btn" data-id="6" data-name="Eggs" data-price="$5.00"
+                  data-image="./food-menu-6.png">Add to Cart</a>
+              </div>
+            </div>
+
+
+            <div class="item">
+              <div class="item-info">
+                <img src="./img/chicken-complete.png" alt="Dish 7">
+                <h3>Complete Chicken</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $30.00</p>
+                <a href="" class="btn" data-id="7" data-name="Complete Chicken" data-price="$30.00"
+                  data-image="./chicken-complete.png">Add to Cart</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="drinks">
+
+            <div class="item">
+              <div class="item-info">
+                <img src="./img/lemon-juice.png" alt="Drink 1">
+                <h3>Lemon Juice</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $2.00</p>
+                <a href="" class="btn" data-id="8" data-name="Lemon Juice" data-price="$2.00"
+                  data-image="./lemon-juice.png">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-info">
+                <img src=".-/img/mango-juice.png" alt="Drink 2">
+                <h3>Mango Juice</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $2.50</p>
+                <a href="" class="btn" data-id="9" data-name="Mango Juice" data-price="$2.50"
+                  data-image="./mango-juice.png">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-info">
+                <img src="./img/watermelon-juice.png" alt="Drink 3">
+                <h3>Watermelon Juice</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $2.00</p>
+                <a href="" class="btn" data-id="10" data-name="Watermelon Juice" data-price="$2.00"
+                  data-image="/watermelon-juice.png">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-info">
+                <img src="./img/strawberry-juice.png" alt="Drink 4">
+                <h3>Starwberry Juice</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $2.50</p>
+                <a href="" class="btn" data-id="11" data-name="Starwberry Juice" data-price="$2.50"
+                  data-image="./strawberry-juice.png">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-info">
+                <img src="./img/grap-juice.png" alt="Drink 5">
+                <h3>Grap Juice</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $1.50</p>
+                <a href="" class="btn" data-id="12" data-name="Grap Juice" data-price="$1.50"
+                  data-image="./grap-juice.png">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item-info">
+                <img src="./img/carrots-juice.png" alt="Drink 6">
+                <h3>Carrots Juice</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+              </div>
+              <div class="item-price">
+                <p>Price : $3.00</p>
+                <a href="" class="btn" data-id="13" data-name="Carrots Juice" data-price="$3.00"
+                  data-image="./carrots-juice.png">Add to Cart</a>
+              </div>
+            </div>
+
+            <div class=" item">
+                  <div class="item-info">
+                    <img src="./img/grog-juice-mango.png" alt="Drink 7">
+                    <h3>Mango and Apricot Juice</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                  </div>
+                  <div class="item-price">
+                    <p>Price : $3.50</p>
+                    <a href="" class="btn" data-id="14" data-name="ango and Apricot Juice" data-price="$3.50"
+                      data-image="./grog-juice-mango.png">Add to Cart</a>
+                  </div>
+
+              </div>
+
+            </div>
+
+            <div id="cakes">
+
+              <div class="item">
+                <div class="item-info">
+                  <img src="./img/ice-cream-cake.png" alt="cake title">
+                  <h3>Ice Cream Cake</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $10.00</p>
+                  <a href="" class="btn" data-id="15" data-name="Ice Cream Cake" data-price="$10.00"
+                    data-image="./ice-cream-cake.png">Add to Cart</a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-info">
+                  <img src="./img/croissant-breakfas.png" alt="cake title">
+                  <h3>Butter Croissant 1</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $1.00</p>
+                  <a href="" class="btn" data-id="16" data-name="Butter Croissant 1" data-price="$1.00"
+                    data-image="./croissant-breakfas.png">Add to Cart</a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-info">
+                  <img src="./img/croissant-chocolat.png" alt="cake title">
+                  <h3>Chocolate Almond Croissant</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $2.00</p>
+                  <a href="" class="btn" data-id="17" data-name="Chocolate Almond Croissant" data-price="$2.00"
+                    data-image="./croissant-chocolat.png">Add to Cart</a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-info">
+                  <img src="./img/pain-au-chocolat-croissant.png" alt="cake title">
+                  <h3>Mango Escargo</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $1.00</p>
+                  <a href="" class="btn" data-id="18" data-name="Mango Escargo" data-price="$1.00"
+                    data-image="./pain-au-chocolat-croissant.png">Add to Cart</a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-info">
+                  <img src="./img/puff-croissant.png" alt="cake title">
+                  <h3>Puff Croissant</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $2.00</p>
+                  <a href="" class="btn" data-id="19" data-name="Puff Croissant" data-price="$2.00"
+                    data-image="./puff-croissant.png">Add to Cart</a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-info">
+                  <img src="./img/croissant-pain.png" alt="cake title">
+                  <h3>Butter Croissant 2</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $1.00</p>
+                  <a href="" class="btn" data-id="20" data-name="Butter Croissant 2" data-price="$1.00"
+                    data-image="./croissant-pain.png">Add to Cart</a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-info">
+                  <img src="./img/donuts.png" alt="cake title">
+                  <h3>Donuts</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $2.00</p>
+                  <a href="" class="btn" data-id="21" data-name="Donuts" data-price="$2.00"
+                    data-image="./img/donuts.png">Add to Cart</a>
+                </div>
+              </div>
+
+            </div>
+
+            <div id="ice-cream">
+
+              <div class="item">
+                <div class="item-info">
+                  <img src="./img/ice-cream-cones-milkshake.png" alt="ice-cream 1">
+                  <h3>Ice Cream Glass 1</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $1.00</p>
+                  <a href="" class="btn" data-id="22" data-name="Ice Cream Glass 1" data-price="$1.00"
+                    data-image="./ice-cream-cones-milkshake.png">Add to Cart</a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-info">
+                  <img src="./img/pink-ice-cream-glass.png" alt="ice-cream 2">
+                  <h3>Pink Ice Cream</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $3.00</p>
+                  <a href="" class="btn" data-id="23" data-name="Pink Ice Cream" data-price="$3.00"
+                    data-image="./pink-ice-cream-glass.png">Add to Cart</a>
+                </div>
+
+              </div>
+
+              <div class="item">
+
+                <div class="item-info">
+                  <img src="./img/chocolate-ice-cream.png" alt="ice-cream 3">
+                  <h3>Chocolate Ice Cream 1</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $3.00</p>
+                  <a href="" class="btn" data-id="24" data-name="Chocolate Ice Cream" data-price="$3.00"
+                    data-image="./chocolate-ice-cream.png">Add to Cart</a>
+                </div>
+
+              </div>
+
+              <div class="item">
+
+                <div class="item-info">
+                  <img src="./img/ice-cream-glass.png" alt="ice-cream 4">
+                  <h3>Ice Cream Glass 2</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $0.50</p>
+                  <a href="" class="btn" data-id="25" data-name="Ice Cream Glass 2" data-price="$0.50"
+                    data-image="./ice-cream-glass.png">Add to Cart</a>
+                </div>
+
+              </div>
+
+              <div class="item">
+
+                <div class="item-info">
+                  <img src="./img/chocolate-ice-cream-frappe-coffee.png" alt="ice-cream 5">
+                  <h3>Creamy Chocolate</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $2.00</p>
+                  <a href="" class="btn" data-id="26" data-name="reamy Chocolate" data-price="$2.00"
+                    data-image="./img/chocolate-ice-cream-frappe-coffee.png">Add to Cart</a>
+                </div>
+
+              </div>
+
+              <div class="item">
+
+                <div class="item-info">
+                  <img src="./img/milkshake-drink-ice-cream.png" alt="ice-cream 6">
+                  <h3>Milkshake Ice Cream</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $4.00</p>
+                  <a href="" class="btn" data-id="27" data-name="Milkshake Ice Cream" data-price="$4.00"
+                    data-image="./milkshake-drink-ice-cream.png">Add to Cart</a>
+                </div>
+
+              </div>
+
+              <div class="item">
+
+                <div class="item-info">
+                  <img src="./img/ice-cream-chocolate3.png" alt="ice-cream 7">
+                  <h3>Chocolate Ice Cream 2</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea!</p>
+                </div>
+                <div class="item-price">
+                  <p>Price : $1.50</p>
+                  <a href="" class="btn" data-id="28" data-name="Chocolate Ice Cream 2" data-price="$1.50"
+                    data-image="./ice-cream-chocolate3.png">Add to Cart</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="title">
+          <h2>Our Gallery</h2>
+          <p>The Best Moments of Our Clients</p>
+        </div>
+        <div class="img-gallery">
+          <img src="./img/family.jpg" alt="gallery1">
+          <img src="./img/happy-family1.jpg" alt="gallery2">
+          <img src="./img/happy-family2.jpg" alt="gallery3">
+          <img src="./img/happy-family3.jpg" alt="gallery4">
+          <img src="./img/happy-family4.jpg" alt="gallery5">
+          <img src="./img/happy-family5.jpg" alt="gallery6">
+          <img src="./img/happy-family6.jpg" alt="gallery7">
+          <img src="./img/happy-family7.jpg" alt="gallery8">
+          <img src="./img/happy-family8.jpg" alt="gallery9">
+          <img src="./img/happy-family9.jpg" alt="gallery10">
+        </div>
+      </div>
+    </section>
+    <section id="feedback">
+      <div class="container">
+        <div class="title">
+          <h2>Feedback</h2>
+          <p>Give Us Your Feedback To Improve Our Services</p>
+        </div>
+        <div class="customer-reviews">
+          <div class="display-reviews">
+            <h2>Reviews About Us</h2>
+            <div class="reviews-container"></div>
+            <div class="average-rating">Average Rating : <span id="averageStars">0</span> Stars</div>
+          </div>
+          <div class="add-review">
+            <h2>Share Your Experience With Us Here</h2>
+            <input type="text" id="customerName" placeholder="Your Name" required>
+            <textarea id="customerReview" placeholder="Your Feedback" required></textarea>
+            <div class="rating">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+            </div>
+            <button id="submitReview" class="btn">Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <div>
+              <h3>ADDRESS</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Morocco, Agadir, Hay Farah</p>
+              <p><i class="fa-solid fa-phone"></i>  Phone: 0123456789</p>
+              <p><i class="fa-solid fa-envelope"></i>  support@gmail.com</p>
+            </div>
+            <div>
+              <h3>WORKING HOURS</h3>
+              <p>8:00 am to 11:00 pm on Weekdays</p>
+              <p>11:00 am to 1:00 Am on Weekends</p>
+            </div>
+            <div>
+              <h3>FOLLOW US</h3>
+              <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+              <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i> </a>
+            </div>
+          </div>
+          <form action="">
+            <input type="text" name="Name" id="name" placeholder="Full Name" required>
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-third">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <p>Copyright &copy; 2023 All rights reserved</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
